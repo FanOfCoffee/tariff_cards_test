@@ -8,7 +8,7 @@ function App() {
     <div className="TariffApp">
       <div className="app-container">
         <Header/>
-        <div className="pricing-cards">
+        <div className="tariff-cards">
           <TariffCardList/>
         </div>
       </div>

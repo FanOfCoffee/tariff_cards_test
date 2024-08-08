@@ -112,12 +112,13 @@
     gap: 2em;
 }
 
-.TariffApp .pricing-cards {
+.TariffApp .tariff-cards {
     margin-top: 4em;
     min-height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
 @media screen and (max-width: 800px) {
