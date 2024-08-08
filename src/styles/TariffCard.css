@@ -25,9 +25,9 @@
     align-items: stretch;
 }
 
-.TariffCard header > .card-price {
+.TariffCard header > .pricing-price {
     margin-block: 1rem;
-    font-size: 3.5em;
+    font-size: 1em;
 }
 
 .TariffCard .card-features > * {
@@ -44,7 +44,28 @@
 }
 
 @media screen and (max-width: 800px) {
-    .TariffCard:nth-child(2) {
+    .TariffCard:nth-child(3) {
         align-self: center;
     }
+
+}
+
+.pricing-price {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 10vh;
+}
+
+.rub {
+    align-content: baseline;
+}
+
+.price-card {
+    align-content: center;
+}
+
+.month {
+    align-content: end;
 }

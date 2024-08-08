@@ -27,10 +27,6 @@
     display: grid;
     place-items: center;
     background-color: var(--neutral-very-light-grayish-blue);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 375px 658px;
-    z-index: 999;
 }
 
 .TariffApp::before {
@@ -123,8 +119,5 @@
 
 @media screen and (max-width: 800px) {
     .TariffApp {
-        padding-block: 4em;}
-    .TariffApp .pricing-cards {
-        flex-direction: column;
-        gap: 2em;}
+        padding-block: 3em;}
 }
