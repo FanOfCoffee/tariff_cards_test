@@ -1,0 +1,50 @@
+.TariffCard {
+    padding: 2em;
+    border-radius: 1em;
+    text-align: center;
+    color: var(--neutral-dark-grayish-blue);
+    background-color: var(--neutral-white);
+    width: min(100%, 30rem);
+}
+.TariffCard:nth-child(1) {
+    background-color: lightblue;
+}
+.TariffCard:nth-child(2) {
+    background-color: lightseagreen;
+}
+.TariffCard:nth-child(4) {
+    background-color: lightpink;
+}
+.TariffCard:nth-child(3) {
+    background-image: linear-gradient(to right, var(--primary-linear-gradient));
+    color: var(--neutral-white);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.TariffCard header > .card-price {
+    margin-block: 1rem;
+    font-size: 3.5em;
+}
+
+.TariffCard .card-features > * {
+    padding-block: 1em;
+    border-bottom: 1px solid var(--neutral-light-grayish-blue);
+}
+
+.TariffCard .card-features :first-child {
+    border-top: 1px solid var(--neutral-light-grayish-blue);
+}
+
+.TariffCard .card-features :last-child {
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .TariffCard:nth-child(2) {
+        align-self: center;
+    }
+}
