@@ -9,11 +9,11 @@
 :root {
     --primary-fw: 700;
     --primary-fs: 15px;
-    --primary-linear-gradient: hsl(298, 97%, 46%), hsl(237, 63%, 64%);
+    --primary-linear-gradient: hsl(335, 97%, 46%), hsl(281, 73%, 45%);
     --neutral-very-light-grayish-blue: hsl(240, 78%, 98%);
     --neutral-light-grayish-blue: hsl(234, 14%, 74%);
     --neutral-grayish-blue: hsl(233, 13%, 49%);
-    --neutral-dark-grayish-blue: hsl(232, 13%, 33%);
+    --neutral-dark-grayish-blue: hsl(233, 14%, 22%);
     --neutral-white: hsl(0, 0%, 100%);
 }
 
@@ -41,55 +41,6 @@
     background-size: contain;
     z-index: -1;
 }
-
-/*Миллионная попытка сделать переключатель*/
-.TariffApp .price-switch {
-    --border-radius: 10em;
-    display: block;
-    width: 50px;
-    height: 25px;
-    border-radius: var(--border-radius);
-    position: relative;
-    cursor: pointer;
-}
-
-.TariffApp .price-checkbox {
-    opacity: 0;
-    height: 0;
-    width: 0;
-}
-
-.TariffApp .switch-slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 25px;
-    border-radius: var(--border-radius);
-    background-image: linear-gradient(to right, var(--primary-linear-gradient));
-}
-
-.TariffApp .switch-slider:is(:hover, :focus-visible) {
-    opacity: 0.7;
-}
-
-.TariffApp .switch-slider::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 4px;
-    width: 20px;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    background-color: var(--neutral-very-light-grayish-blue);
-    transform: translateX(calc(100% + 2px));
-    transition: 0.3s ease;
-}
-
-.TariffApp .price-checkbox:checked + .switch-slider::before {
-    transform: translateX(0%);
-}
-
 
 .TariffApp .app-container {
     width: min(90%, 70rem);

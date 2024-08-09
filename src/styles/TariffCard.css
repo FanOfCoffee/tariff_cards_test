@@ -7,13 +7,13 @@
     width: min(100%, 30rem);
 }
 .TariffCard:nth-child(1) {
-    background-color: lightblue;
+    background-image: linear-gradient(to right, lightblue, rgb(120, 153, 163));
 }
 .TariffCard:nth-child(2) {
-    background-color: lightseagreen;
+    background-image: linear-gradient(to right, lightseagreen, teal);
 }
 .TariffCard:nth-child(4) {
-    background-color: lightpink;
+    background-image: linear-gradient(to right, lightpink, rgb(169, 106, 116));
 }
 .TariffCard:nth-child(3) {
     background-image: linear-gradient(to right, var(--primary-linear-gradient));
