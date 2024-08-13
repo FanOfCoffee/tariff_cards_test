@@ -18,11 +18,11 @@
 .TariffCard:nth-child(3) {
     background-image: linear-gradient(to right, var(--primary-linear-gradient));
     color: var(--neutral-white);
-    align-self: stretch;
+    /*align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch;*/
 }
 
 .TariffCard header > .pricing-price {
@@ -43,12 +43,7 @@
     margin-bottom: 2em;
 }
 
-@media screen and (max-width: 800px) {
-    .TariffCard:nth-child(3) {
-        align-self: center;
-    }
 
-}
 
 .pricing-price {
     justify-content: center;
@@ -68,4 +63,15 @@
 
 .month {
     align-content: end;
+}
+
+.selected:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    color: var(--neutral-white);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }

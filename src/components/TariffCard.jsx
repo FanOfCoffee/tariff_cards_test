@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/TariffCard.css'
 
+
 const TariffCard = ({ title, price, speed, traffic }) => {
+    const [selected, setSelected] = useState(false)
     return (
-        <div className="TariffCard">
+        <div className={`TariffCard ${selected ? 'selected' : ''}`}
+        onClick={()=> setSelected(!selected)}>
             <header>
             <p className="card-title">{title}</p>
             <div className='pricing-price'>
